@@ -1,0 +1,94 @@
+<!Doctype html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> UC - HTML FORMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+            
+            <form action="/action_page.php">
+    <br><h1 style="color: whitesmoke;">Forms</h1><br><br>
+
+    <p style="color: whitesmoke;">Kindly Fill Out The Following.</p>
+    <hr>
+
+	<label for="firstname" style="color:whitesmoke"><b>First Name</b></label>
+    <input type="text" placeholder="Enter Here" name="firstname" id="firstname" required><br><br>
+
+    <label for="middlename" style="color:whitesmoke;"><b>Middle Name</b></label>
+    <input type="text" placeholder="Enter Here" name="middlename" id="middllename" required><br><br>
+
+    <label for="familyname" style="color:whitesmoke"><b>Family Name</b></label>
+    <input type="text" placeholder="Enter Here" name="lastname" id="familyname" required><br><br>
+
+    <label for="gender" style="color:whitesmoke;"><b>Gender:</b><br>
+    </label><label for="gender" style="color:whitesmoke;"><b>Female</b></label><input type="radio" id="html" name="fav_language" value="HTML"><label for="gender" style="color:whitesmoke;"><b>Male</b></label>
+    <input type="radio" id="html" name="fav_language" value="HTML"><br><br>
+
+    <label for="email" style="color:whitesmoke;"><b>Email</b></label>
+    <input type="text" placeholder="Enter Here" name="email" id="email" required><br><br>
+
+    <label for="age" style="color:whitesmoke;"><b>Home Address</b></label>
+    <input type="text" placeholder="Enter Here" name="address" id="address" required><br><br>
+
+    <label for="hobbies" style="color:whitesmoke;"><b>Hobbies:</b></label><br><br>
+
+    <label for="hobbies" style="color:whitesmoke;"><b>Computer Games</b></label>
+    <input type="checkbox" placeholder="Coi" name="age" id="age" required><br><br>
+
+    <label for="hobbies" style="color:whitesmoke;"><b>Playing Music Instruments</b></label>
+    <input type="checkbox" placeholder="Coi" name="age" id="age" required><br><br>
+
+    <label for="hobbies" style="color:whitesmoke;"><b>Cooking</b></label>
+    <input type="checkbox" placeholder="Coi" name="age" id="age" required><br><br>
+
+    <label for="hobbies" style="color:whitesmoke;"><b>Drawing</b></label>
+    <input type="checkbox" placeholder="Coi" name="age" id="age" required><br><br>
+
+    <label for="age" style="color:whitesmoke;"><b>Age</b></label>
+    <input type="text" placeholder="Enter Here" name="age" id="age" required><br><br>
+
+    <label for="age" style="color:whitesmoke;"><b>Favorite Color</b></label>
+    
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Red</a>
+    <a href="#">Blue</a>
+    <a href="#">Green</a>
+    <a href="#">Pink</a>
+    <a href="#">White</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    <br><br><label for="course" style="color:whitesmoke"><b>Say Something About Yourself</b></label>
+    <input type="text" placeholder="Enter Here" name="course" id="course" required><br><br>
+
+    <button type="submit" class="submitbtn">Submit</button>
+    <button type="reset" class="clearbtn">Clear</button>
+
+
+  </div> 
+</form>
+
+</body>
+</html>
